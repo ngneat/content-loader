@@ -55,10 +55,10 @@ export class AppModule { }
 
 ## API
 
-### Props
+### @Inputs
 
 
-|Prop|Type|Default|Description|
+|Input|Type|Default|Description|
 |---|---|---|---|
 |width|number|`400`||
 |height|number|`130`||
