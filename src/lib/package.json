@@ -1,0 +1,27 @@
+{
+  "name": "@basal/content-loader",
+  "version": "1.0.0",
+  "author": {
+    "name": "Netanel Basal"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NetanelBasal/ngx-content-loader"
+  },
+  "keywords": [
+    "angular",
+    "content loader",
+    "loading",
+    "facebook loading"
+  ],
+  "license": "MIT",
+  "main": "./bundles/content-loader.umd.js",
+  "es2015": "./esm2015/content-loader.js",
+  "module": "./esm5/content-loader.es5.js",
+  "typings": "./content-loader.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/http": "^5.0.0"
+  }
+}

@@ -5,7 +5,7 @@
 /dist-server
 /tmp
 /out-tsc
-
+.vscode
 # dependencies
 /node_modules
 
