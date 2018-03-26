@@ -1,4 +1,4 @@
-# ngx-content-loader
+# Angular Content Loader
 
 <p align="center">
   <img width="400" alt="Example's react-content-loader" src="https://user-images.githubusercontent.com/4838076/34308760-ec55df82-e735-11e7-843b-2e311fa7b7d0.gif" />
