@@ -17,7 +17,7 @@ This is an Angular port for [react-content-loader](https://github.com/danilowoz/
   [create-react-content-loader](https://danilowoz.github.io/create-react-content-loader/) to create
   your customs loadings easily;
 * :ok_hand: **You can use right now:** there are a lot of presets to use the loader, see the
-  [options](#options);
+  [options](#examples);
 * :rocket: **Perfomance:** uses pure SVG to work, so it's works without any extra scripts,
   canvas, etc;
 
