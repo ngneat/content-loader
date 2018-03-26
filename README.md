@@ -9,12 +9,14 @@ SVG component to create placeholder loading, like Facebook cards loading.
 
 This is an Angular port for [react-content-loader](https://github.com/danilowoz/react-content-loader).
 
-- Completely customizable: you can change the colors, speed and sizes.
-- Create your own loading: use the [online tool](https://danilowoz.github.io/create-react-content-loader/) to create your custom loader easily.
-- You can use it right now: there are a lot of presets already.
-- Performance:
-  - Tree-shakable and highly optimized bundle.
-  - Pure SVG, so it's works without any javascript, canvas, etc.
+* :gear: **Complety customizable:** you can change the colors, speed and sizes;
+* :pencil2: **Create your own loading:** use the
+  [create-react-content-loader](https://danilowoz.github.io/create-react-content-loader/) to create
+  your customs loadings easily;
+* :ok_hand: **You can use right now:** there are a lot of presets to use the loader, see the
+  [options](#options);
+* :rocket: **Perfomance:** uses pure SVG to work, so it's works without any extra scripts,
+  canvas, etc;
 
 ## Install
 
@@ -46,13 +48,32 @@ export class AppModule { }
 </content-loader>
 ```
 
-### Built-in loaders
+### Examples
+
+#### Facebook Style
+
+```html
+<facebook-content-loader></facebook-content-loader>
+```
+
+![Facebook Style](https://user-images.githubusercontent.com/4838076/34308760-ec55df82-e735-11e7-843b-2e311fa7b7d0.gif)
+
+#### List Style
+
+```html
+<list-content-loader></list-content-loader>
+```
+
+![List Style](https://user-images.githubusercontent.com/4838076/36352948-b8931430-149e-11e8-9f4b-3f00bc444a6d.gif)
+
+#### Bullet list Style
+
 
 ```html
 <bullet-list-content-loader></bullet-list-content-loader>
-<facebook-content-loader></facebook-content-loader>
-<list-content-loader></list-content-loader>
 ```
+
+![Bullet list Style](https://user-images.githubusercontent.com/4838076/31998372-59817bac-b96e-11e7-8ef8-07f61670ee18.gif)
 
 ## API
 
