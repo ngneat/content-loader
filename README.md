@@ -23,8 +23,14 @@ This is an Angular port for [react-content-loader](https://github.com/danilowoz/
 
 ## Install
 
+### Yarn
 ```bash
-yarn add @netbasal/ngx-content-loader
+yarn add @netbasal/content-loader
+```
+
+### Npm
+```bash
+npm install @netbasal/content-loader
 ```
 
 ## Usage
