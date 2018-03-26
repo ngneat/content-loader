@@ -1,8 +1,11 @@
 # ngx-content-loader
 
-SVG component to create placeholder loading, like Facebook cards loading.
+<p align="center">
+  <img width="400" alt="Example's react-content-loader" src="https://user-images.githubusercontent.com/4838076/34308760-ec55df82-e735-11e7-843b-2e311fa7b7d0.gif" />
+</p>
 
-![preview](https://user-images.githubusercontent.com/4838076/34308760-ec55df82-e735-11e7-843b-2e311fa7b7d0.gif)
+Angular component that uses SVG to create a collection of loaders which simulates the structure of the
+content that will be loaded, similar to Facebook cards loaders.
 
 [Live Demo](https://stackblitz.com/edit/ngx-content-loader)
 ## Features
