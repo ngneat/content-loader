@@ -36,7 +36,7 @@ npm install @netbasal/content-loader
 ## Usage
 
 ```ts
-import { ContentLoaderModule } from '@netbasal/ngx-content-loader';
+import { ContentLoaderModule } from '@netbasal/content-loader';
 
 @NgModule({
   imports: [
