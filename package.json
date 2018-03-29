@@ -2,6 +2,10 @@
   "name": "content-loader",
   "version": "0.0.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NetanelBasal/ngx-content-loader.git"
+  },
   "scripts": {
     "commit": "git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
