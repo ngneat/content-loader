@@ -12,11 +12,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
+    "build:lib2": "ng-packagr -p package.json",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "build:lib": "gulp --gulpfile gulpfile.lib.js",
-    "version": "sync-json -v --property version --source package.json src/lib/package.json"
+    "e2e": "ng e2e"
   },
   "config": {
     "commitizen": {
@@ -52,6 +51,7 @@
     "del": "^3.0.0",
     "fs": "0.0.1-security",
     "gulp": "^3.9.1",
+    "ng-packagr": "^2.4.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.9.2",
     "gulp-htmlmin": "^4.0.0",

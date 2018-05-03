@@ -42,3 +42,8 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+src/lib/node_modules
+src/lib/.ng_pkg_build
+src/lib/dist
+src/lib/yarn-error.log
+src/lib/dist.tgz
