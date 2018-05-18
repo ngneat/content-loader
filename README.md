@@ -33,6 +33,11 @@ yarn add @netbasal/content-loader
 npm install @netbasal/content-loader
 ```
 
+### Angular 6
+```bash
+npm install @netbasal/content-loader@next
+```
+
 ## Usage
 
 ```ts
