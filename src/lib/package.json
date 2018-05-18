@@ -29,9 +29,8 @@
   "module": "./esm5/content-loader.es5.js",
   "typings": "./content-loader.d.ts",
   "peerDependencies": {
-    "@angular/common": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/http": "^5.0.0"
+    "@angular/common": "^6.0.0",
+    "@angular/core": "^6.0.0"
   },
   "devDependencies": {
     "ng-packagr": "^2.4.2"
