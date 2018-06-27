@@ -1,7 +1,7 @@
 {
   "name": "@netbasal/content-loader",
   "$schema": "./node_modules/ng-packagr/package.schema.json",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "author": {
     "name": "Netanel Basal"
   },
