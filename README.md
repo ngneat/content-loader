@@ -102,6 +102,8 @@ export class AppModule { }
 |preserveAspectRatio|string|`'xMidYMid meet'`||
 |primaryColor|string|`'#f9f9f9'`||
 |secondaryColor|string|`'#ecebeb'`||
+|primaryOpacity|number|`1`||
+|secondaryOpacity|number|`1`||
 |uniqueKey|string|`randomId()`|Unique ID, you need to make it consistent for SSR|
 
 ## Credits

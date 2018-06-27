@@ -17,6 +17,8 @@ export class ContentLoaderComponent {
   @Input() preserveAspectRatio = 'xMidYMid meet';
   @Input() primaryColor = '#f9f9f9';
   @Input() secondaryColor = '#ecebeb';
+  @Input() primaryOpacity = 1;
+  @Input() secondaryOpacity = 1;
   @Input() uniqueKey;
   idClip = uid();
   idGradient = uid();
