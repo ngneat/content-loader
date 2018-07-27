@@ -1,9 +1,9 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'bullet-list-content-loader',
   template: `
-  <content-loader>
+  <content-loader [animate]="animate">
     <svg:circle cx="10" cy="20" r="8" />
     <svg:rect x="25" y="15" rx="5" ry="5" width="220" height="10" />
     <svg:circle cx="10" cy="50" r="8" />
@@ -16,4 +16,5 @@ import { Component, OnInit, Input } from '@angular/core';
   `
 })
 export class BulletListContentLoaderComponent {
+  @Input() animate = true;
 }
