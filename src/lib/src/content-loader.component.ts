@@ -11,6 +11,7 @@ function uid() {
   templateUrl: './content-loader.component.html'
 })
 export class ContentLoaderComponent {
+  @Input() animate = true;
   @Input() width = 400;
   @Input() height = 130;
   @Input() speed = 2;
