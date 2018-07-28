@@ -96,6 +96,7 @@ export class AppModule { }
 
 |Input|Type|Default|Description|
 |---|---|---|---|
+|animate|boolean|`true`|`false` to render with no animation|
 |width|number|`400`||
 |height|number|`130`||
 |speed|number|`2`||

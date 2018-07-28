@@ -1,9 +1,13 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { ContentLoaderComponent } from './content-loader.component';
 
 @Component({
   selector: 'bullet-list-content-loader',
   template: `
-  <content-loader>
+  <content-loader [animate]="animate" [width]="width" [height]="height" [speed]="speed" [preserveAspectRatio]="preserveAspectRatio"
+  [primaryColor]="primaryColor" [secondaryColor]="secondaryColor" [primaryOpacity]="primaryOpacity" [secondaryColor]="secondaryColor"
+  [uniqueKey]="uniqueKey">
     <svg:circle cx="10" cy="20" r="8" />
     <svg:rect x="25" y="15" rx="5" ry="5" width="220" height="10" />
     <svg:circle cx="10" cy="50" r="8" />
@@ -15,5 +19,4 @@ import { Component, OnInit, Input } from '@angular/core';
    </content-loader>
   `
 })
-export class BulletListContentLoaderComponent {
-}
+export class BulletListContentLoaderComponent extends ContentLoaderComponent {}
