@@ -96,12 +96,15 @@ export class AppModule { }
 
 |Input|Type|Default|Description|
 |---|---|---|---|
+|animate|boolean|`true`|`false` to render with no animation|
 |width|number|`400`||
 |height|number|`130`||
 |speed|number|`2`||
 |preserveAspectRatio|string|`'xMidYMid meet'`||
 |primaryColor|string|`'#f9f9f9'`||
 |secondaryColor|string|`'#ecebeb'`||
+|primaryOpacity|number|`1`||
+|secondaryOpacity|number|`1`||
 |uniqueKey|string|`randomId()`|Unique ID, you need to make it consistent for SSR|
 
 ## Credits
