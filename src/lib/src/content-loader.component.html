@@ -1,6 +1,6 @@
 <svg attr.viewBox="0 0 {{width}} {{height}}" version="1.1" [attr.preserveAspectRatio]="preserveAspectRatio">
 
-  <rect attr.clip-path="url(#{{ idClip }})" [ngStyle]="{fill: 'url(#' + idGradient + ')' }" x="0" y="0" [attr.width]="width"
+  <rect attr.clip-path="url({{window.location.href}}#{{ idClip }})" [ngStyle]="{fill: 'url('+window.location.href+'#' + idGradient + ')' }" x="0" y="0" [attr.width]="width"
     [attr.height]="height" />
 
   <defs>
