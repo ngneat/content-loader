@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@netbasal/ngx-content-loader": [
+        "dist/netbasal/ngx-content-loader"
+      ],
+      "@netbasal/ngx-content-loader/*": [
+        "dist/netbasal/ngx-content-loader/*"
+      ]
+    }
   }
 }

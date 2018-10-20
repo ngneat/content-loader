@@ -121,6 +121,46 @@
           }
         }
       }
+    },
+    "@netbasal/ngx-content-loader": {
+      "root": "projects/netbasal/ngx-content-loader",
+      "sourceRoot": "projects/netbasal/ngx-content-loader/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/netbasal/ngx-content-loader/tsconfig.lib.json",
+            "project": "projects/netbasal/ngx-content-loader/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/netbasal/ngx-content-loader/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/netbasal/ngx-content-loader/src/test.ts",
+            "tsConfig": "projects/netbasal/ngx-content-loader/tsconfig.spec.json",
+            "karmaConfig": "projects/netbasal/ngx-content-loader/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/netbasal/ngx-content-loader/tsconfig.lib.json",
+              "projects/netbasal/ngx-content-loader/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ngx-content-loader"
