@@ -27,7 +27,7 @@ This is an Angular port for [react-content-loader](https://github.com/danilowoz/
 ### Yarn
 
 ```bash
-yarn add @netbasal/content-loader
+yarn add @netbasal/ngx-content-loader
 ```
 
 ## Usage
