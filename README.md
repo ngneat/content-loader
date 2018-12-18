@@ -33,7 +33,7 @@ yarn add @netbasal/ngx-content-loader
 ## Usage
 
 ```ts
-import { ContentLoaderModule } from '@netbasal/content-loader';
+import { ContentLoaderModule } from '@netbasal/ngx-content-loader';
 
 @NgModule({
   imports: [ContentLoaderModule]
