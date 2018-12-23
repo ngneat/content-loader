@@ -33,6 +33,8 @@ export class ContentLoaderComponent implements OnInit {
   uniqueKey;
   @Input()
   rtl;
+  @Input()
+  style;
   idClip = uid();
   idGradient = uid();
 

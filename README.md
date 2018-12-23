@@ -95,6 +95,7 @@ export class AppModule {}
 | secondaryOpacity    | number  | `1`               |                                                   |
 | uniqueKey           | string  | `randomId()`      | Unique ID, you need to make it consistent for SSR |
 | rtl                 | boolean | `false`           | Right-to-left animation                           |
+| style               | Object  | `null`            | Ex: `{ width: '100%', height: '70px' }`           |
 
 ## Credits
 
