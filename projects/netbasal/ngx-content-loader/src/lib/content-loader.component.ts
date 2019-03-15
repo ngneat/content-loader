@@ -48,12 +48,16 @@ export class ContentLoaderComponent implements OnInit {
 
   get fillStyle() {
     return {
-      fill: `url(${window.location.href}#${this.idGradient})`
+      fill: `url(${this.urlBase}#${this.idGradient})`
     };
   }
 
   get clipStyle() {
-    const {origin, pathname} = window.location
-    return `${origin}${pathname}#${this.idClip})`;
+    return `${this.urlBase}#${this.idClip})`;
+  }
+  
+  get urlBase() {
+    const {origin, pathname} = window.location;
+    return `${origin}${pathname}`;
   }
 }
