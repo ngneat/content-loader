@@ -53,6 +53,7 @@ export class ContentLoaderComponent implements OnInit {
   }
 
   get clipStyle() {
-    return `url(${window.location.href}#${this.idClip})`;
+    const {origin, pathname} = window.location
+    return `${origin}${pathname}#${this.idClip})`;
   }
 }
