@@ -53,7 +53,7 @@ export class ContentLoaderComponent implements OnInit {
   }
 
   get clipStyle() {
-    return `${this.urlBase}#${this.idClip})`;
+    return `url(${this.urlBase}#${this.idClip})`;
   }
   
   get urlBase() {
