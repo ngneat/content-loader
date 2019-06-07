@@ -14,6 +14,8 @@ export class ContentLoaderComponent implements OnInit {
   @Input()
   animate = true;
   @Input()
+  baseUrl = '';
+  @Input()
   width = 400;
   @Input()
   height = 130;
@@ -48,16 +50,11 @@ export class ContentLoaderComponent implements OnInit {
 
   get fillStyle() {
     return {
-      fill: `url(${this.urlBase}#${this.idGradient})`
+      fill: `url(${this.baseUrl}#${this.idGradient})`
     };
   }
 
   get clipStyle() {
-    return `url(${this.urlBase}#${this.idClip})`;
-  }
-  
-  get urlBase() {
-    const {origin, pathname} = window.location;
-    return `${origin}${pathname}`;
+    return `url(${this.baseUrl}#${this.idClip})`;
   }
 }

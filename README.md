@@ -85,6 +85,8 @@ export class AppModule {}
 | Input               | Type    | Default           | Description                                       |
 | ------------------- | ------- | ----------------- | ------------------------------------------------- |
 | animate             | boolean | `true`            | `false` to render with no animation               |
+| baseUrl             | string  | ``                | Required if you're using `<base url="/" />` in your `<head/>`. Defaults to an empty string. This prop is commom used as: `<content-loader [baseUrl]="window.location.pathname"></content-loader>` which will fill the svg attribute with the relative path. Related [#93](https://github.com/danilowoz/react-content-loader/issues/93).              
+   |
 | width               | number  | `400`             |                                                   |
 | height              | number  | `130`             |                                                   |
 | speed               | number  | `2`               |                                                   |
