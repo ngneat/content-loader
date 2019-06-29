@@ -52,6 +52,9 @@ export class AppModule {}
 </content-loader>
 ```
 
+> Warning: Safari renders the SVG in black in case your Angular application uses the `<base href="/" />` tag in the `<head/>` of your `index.html`.
+ Refer to the input property `baseUrl` below to fix this issue.
+
 ### Examples
 
 #### Facebook Style
@@ -85,7 +88,7 @@ export class AppModule {}
 | Input               | Type    | Default           | Description                                       |
 | ------------------- | ------- | ----------------- | ------------------------------------------------- |
 | animate             | boolean | `true`            | `false` to render with no animation               |
-| baseUrl             | string  | ``                | Required if you're using `<base url="/" />` in your `<head/>`. Defaults to an empty string. This prop is commom used as: `<content-loader [baseUrl]="window.location.pathname"></content-loader>` which will fill the svg attribute with the relative path. Related [#93](https://github.com/danilowoz/react-content-loader/issues/93). |           
+| baseUrl             | string  | ``                | Required if you're using `<base href="/" />` in your `<head/>`. Defaults to an empty string. This prop is commom used as: `<content-loader [baseUrl]="window.location.pathname"></content-loader>` which will fill the svg attribute with the relative path. Do not forget to provide the window property from your component class because `window` is not available in the template otherwise. Related [#93](https://github.com/danilowoz/react-content-loader/issues/93). |           
 | width               | number  | `400`             |                                                   |
 | height              | number  | `130`             |                                                   |
 | speed               | number  | `2`               |                                                   |
