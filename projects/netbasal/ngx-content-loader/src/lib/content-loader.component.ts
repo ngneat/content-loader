@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
 function uid() {
   return Math.random()
@@ -10,7 +10,7 @@ function uid() {
   selector: 'content-loader',
   templateUrl: './content-loader.component.html'
 })
-export class ContentLoaderComponent implements OnInit {
+export class ContentLoaderComponent implements OnInit, OnChanges {
   @Input()
   animate = true;
   @Input()
@@ -44,17 +44,29 @@ export class ContentLoaderComponent implements OnInit {
   rtlAnimation = ['1; -3', '2; -2', '3; -1'];
   animationValues;
 
+  fillStyle: { fill: string };
+  clipStyle: string;
+
   ngOnInit() {
     this.animationValues = this.rtl ? this.rtlAnimation : this.defautlAnimation;
+    this.setFillStyle();
+    this.setClipStyle();
   }
 
-  get fillStyle() {
-    return {
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['baseUrl'].previousValue !== changes['baseUrl'].currentValue) {
+      this.setFillStyle();
+      this.setClipStyle();
+    }
+  }
+
+  setFillStyle() {
+    this.fillStyle = {
       fill: `url(${this.baseUrl}#${this.idGradient})`
     };
   }
 
-  get clipStyle() {
-    return `url(${this.baseUrl}#${this.idClip})`;
+  setClipStyle() {
+    this.clipStyle = `url(${this.baseUrl}#${this.idClip})`;
   }
 }
