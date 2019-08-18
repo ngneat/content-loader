@@ -48,6 +48,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "nonsocode",
+      "name": "Chinonso Chukwuogor",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/12021370?v=4",
+      "profile": "https://github.com/nonsocode",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

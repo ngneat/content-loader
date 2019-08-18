@@ -1,6 +1,6 @@
 # Angular Content Loader
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 
 <p align="center">
   <img width="400" alt="Example's react-content-loader" src="https://user-images.githubusercontent.com/4838076/34308760-ec55df82-e735-11e7-843b-2e311fa7b7d0.gif" />
@@ -124,6 +124,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.mapianist.com"><img src="https://avatars0.githubusercontent.com/u/7777929?v=4" width="100px;" alt="Heo"/><br /><sub><b>Heo</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=leo6104" title="Code">💻</a></td>
     <td align="center"><a href="http://www.andreas.ae"><img src="https://avatars3.githubusercontent.com/u/2174826?v=4" width="100px;" alt="Andreas Aeschlimann"/><br /><sub><b>Andreas Aeschlimann</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=andreas-aeschlimann" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/alexw10"><img src="https://avatars0.githubusercontent.com/u/9453636?v=4" width="100px;" alt="alexw10"/><br /><sub><b>alexw10</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=alexw10" title="Code">💻</a> <a href="https://github.com/NetanelBasal/content-loader/commits?author=alexw10" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/nonsocode"><img src="https://avatars3.githubusercontent.com/u/12021370?v=4" width="100px;" alt="Chinonso Chukwuogor"/><br /><sub><b>Chinonso Chukwuogor</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=nonsocode" title="Code">💻</a></td>
   </tr>
 </table>
 
