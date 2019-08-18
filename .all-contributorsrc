@@ -66,6 +66,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "irustm",
+      "name": "Rustam",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/16316579?v=4",
+      "profile": "https://twitter.com/irustm",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
