@@ -1,4 +1,5 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, Inject, Input, OnChanges, OnInit, PLATFORM_ID, SimpleChanges } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 function uid() {
   return Math.random()
@@ -47,10 +48,17 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
   fillStyle: { fill: string };
   clipStyle: string;
 
+  constructor(@Inject(PLATFORM_ID) private platformId: string) {
+  }
+
   ngOnInit() {
     this.animationValues = this.rtl ? this.rtlAnimation : this.defautlAnimation;
     this.setFillStyle();
     this.setClipStyle();
+
+    if (this.baseUrl === '' && isPlatformBrowser(this.platformId)) {
+      this.baseUrl = window.location.pathname;
+    }
   }
 
   ngOnChanges(changes: SimpleChanges): void {
