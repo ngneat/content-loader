@@ -1,10 +1,13 @@
 {
   "name": "@ngneat/content-loader",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "SVG component to create placeholder loading, like Facebook cards loading",
   "repository": {
     "type": "git",
     "url": "https://github.com/ngneat/content-loader"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "angular",
