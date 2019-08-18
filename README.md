@@ -1,5 +1,7 @@
 # Angular Content Loader
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+
 <p align="center">
   <img width="400" alt="Example's react-content-loader" src="https://user-images.githubusercontent.com/4838076/34308760-ec55df82-e735-11e7-843b-2e311fa7b7d0.gif" />
 </p>
@@ -27,13 +29,13 @@ This is an Angular port for [react-content-loader](https://github.com/danilowoz/
 ### Yarn
 
 ```bash
-yarn add @netbasal/ngx-content-loader
+yarn add @ngneat/content-loader
 ```
 
 ## Usage
 
 ```ts
-import { ContentLoaderModule } from '@netbasal/ngx-content-loader';
+import { ContentLoaderModule } from '@ngneat/content-loader';
 
 @NgModule({
   imports: [ContentLoaderModule]
@@ -53,7 +55,7 @@ export class AppModule {}
 ```
 
 > Warning: Safari renders the SVG in black in case your Angular application uses the `<base href="/" />` tag in the `<head/>` of your `index.html`.
- Refer to the input property `baseUrl` below to fix this issue.
+> Refer to the input property `baseUrl` below to fix this issue.
 
 ### Examples
 
@@ -85,21 +87,21 @@ export class AppModule {}
 
 ### @Inputs
 
-| Input               | Type    | Default           | Description                                       |
-| ------------------- | ------- | ----------------- | ------------------------------------------------- |
-| animate             | boolean | `true`            | `false` to render with no animation               |
-| baseUrl             | string  | ``                | Required if you're using `<base href="/" />` in your `<head/>`. Defaults to an empty string. This prop is commom used as: `<content-loader [baseUrl]="window.location.pathname"></content-loader>` which will fill the svg attribute with the relative path. Do not forget to provide the window property from your component class because `window` is not available in the template otherwise. Related [#93](https://github.com/danilowoz/react-content-loader/issues/93). |           
-| width               | number  | `400`             |                                                   |
-| height              | number  | `130`             |                                                   |
-| speed               | number  | `2`               |                                                   |
-| preserveAspectRatio | string  | `'xMidYMid meet'` |                                                   |
-| primaryColor        | string  | `'#f9f9f9'`       |                                                   |
-| secondaryColor      | string  | `'#ecebeb'`       |                                                   |
-| primaryOpacity      | number  | `1`               |                                                   |
-| secondaryOpacity    | number  | `1`               |                                                   |
-| uniqueKey           | string  | `randomId()`      | Unique ID, you need to make it consistent for SSR |
-| rtl                 | boolean | `false`           | Right-to-left animation                           |
-| style               | Object  | `null`            | Ex: `{ width: '100%', height: '70px' }`           |
+| Input               | Type    | Default                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Description                                       |
+| ------------------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------- |
+| animate             | boolean | `true`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | `false` to render with no animation               |
+| baseUrl             | string  | `` | Required if you're using `<base href="/" />` in your `<head/>`. Defaults to an empty string. This prop is commom used as: `<content-loader [baseUrl]="window.location.pathname"></content-loader>` which will fill the svg attribute with the relative path. Do not forget to provide the window property from your component class because `window` is not available in the template otherwise. Related [#93](https://github.com/danilowoz/react-content-loader/issues/93). |
+| width               | number  | `400`                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                   |
+| height              | number  | `130`                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                   |
+| speed               | number  | `2`                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                   |
+| preserveAspectRatio | string  | `'xMidYMid meet'`                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                   |
+| primaryColor        | string  | `'#f9f9f9'`                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                   |
+| secondaryColor      | string  | `'#ecebeb'`                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                   |
+| primaryOpacity      | number  | `1`                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                   |
+| secondaryOpacity    | number  | `1`                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                   |
+| uniqueKey           | string  | `randomId()`                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Unique ID, you need to make it consistent for SSR |
+| rtl                 | boolean | `false`                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Right-to-left animation                           |
+| style               | Object  | `null`                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Ex: `{ width: '100%', height: '70px' }`           |
 
 ## Credits
 
@@ -108,3 +110,26 @@ This is basically an Angular port for [react-content-loader](https://github.com/
 ## License
 
 MIT &copy; [NetanelBasal](https://github.com/NetanelBasal)
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://www.netbasal.com"><img src="https://avatars1.githubusercontent.com/u/6745730?v=4" width="100px;" alt="Netanel Basal"/><br /><sub><b>Netanel Basal</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=NetanelBasal" title="Code">💻</a> <a href="#content-NetanelBasal" title="Content">🖋</a> <a href="https://github.com/NetanelBasal/content-loader/commits?author=NetanelBasal" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://www.mapianist.com"><img src="https://avatars0.githubusercontent.com/u/7777929?v=4" width="100px;" alt="Heo"/><br /><sub><b>Heo</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=leo6104" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.andreas.ae"><img src="https://avatars3.githubusercontent.com/u/2174826?v=4" width="100px;" alt="Andreas Aeschlimann"/><br /><sub><b>Andreas Aeschlimann</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=andreas-aeschlimann" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/alexw10"><img src="https://avatars0.githubusercontent.com/u/9453636?v=4" width="100px;" alt="alexw10"/><br /><sub><b>alexw10</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=alexw10" title="Code">💻</a> <a href="https://github.com/NetanelBasal/content-loader/commits?author=alexw10" title="Documentation">📖</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

@@ -1,0 +1,54 @@
+{
+  "projectName": "content-loader",
+  "projectOwner": "NetanelBasal",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "NetanelBasal",
+      "name": "Netanel Basal",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6745730?v=4",
+      "profile": "https://www.netbasal.com",
+      "contributions": [
+        "code",
+        "content",
+        "doc"
+      ]
+    },
+    {
+      "login": "leo6104",
+      "name": "Heo",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/7777929?v=4",
+      "profile": "https://www.mapianist.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "andreas-aeschlimann",
+      "name": "Andreas Aeschlimann",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2174826?v=4",
+      "profile": "http://www.andreas.ae",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "alexw10",
+      "name": "alexw10",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/9453636?v=4",
+      "profile": "https://github.com/alexw10",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
