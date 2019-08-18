@@ -1,6 +1,6 @@
 # Angular Content Loader
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
 
 <p align="center">
   <img width="400" alt="Example's react-content-loader" src="https://user-images.githubusercontent.com/4838076/34308760-ec55df82-e735-11e7-843b-2e311fa7b7d0.gif" />
@@ -132,6 +132,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/gund"><img src="https://avatars0.githubusercontent.com/u/3644678?v=4" width="100px;" alt="Alex Malkevich"/><br /><sub><b>Alex Malkevich</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=gund" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/danielsogl"><img src="https://avatars2.githubusercontent.com/u/15234844?v=4" width="100px;" alt="Daniel Sogl"/><br /><sub><b>Daniel Sogl</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=danielsogl" title="Code">💻</a></td>
     <td align="center"><a href="http://www.tailored.hu/"><img src="https://avatars1.githubusercontent.com/u/9606801?v=4" width="100px;" alt="Alex Szabó‮"/><br /><sub><b>Alex Szabó‮</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=kreatemore" title="Code">💻</a></td>
+    <td align="center"><a href="http://codepen.io/donroyco/"><img src="https://avatars2.githubusercontent.com/u/1763537?v=4" width="100px;" alt="Roy"/><br /><sub><b>Roy</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=donroyco" title="Documentation">📖</a></td>
   </tr>
 </table>
 
