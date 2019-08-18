@@ -1,10 +1,10 @@
 {
-  "name": "@netbasal/ngx-content-loader",
+  "name": "@ngneat/content-loader",
   "version": "3.0.0",
   "description": "SVG component to create placeholder loading, like Facebook cards loading",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NetanelBasal/ngx-content-loader"
+    "url": "https://github.com/ngneat/content-loader"
   },
   "keywords": [
     "angular",

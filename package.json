@@ -1,15 +1,16 @@
 {
-  "name": "ngx-content-loader",
+  "name": "content-loader",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build @netbasal/ngx-content-loader",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build:lib": "ng build @ngneat/content-loader",
+    "hooks:pre-commit": "node hooks/pre-commit.js",
+    "release": "standard-version",
+    "commit": "git-cz",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors init"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^8.0.0",
     "@angular/common": "^8.0.0",
@@ -29,10 +30,16 @@
     "@angular/cli": "~8.0.1",
     "@angular/compiler-cli": "^8.0.0",
     "@angular/language-service": "^8.0.0",
+    "@commitlint/cli": "8.1.0",
+    "@commitlint/config-angular": "8.1.0",
+    "@commitlint/config-conventional": "8.1.0",
     "@types/jasmine": "^3.3.8",
     "@types/jasminewd2": "^2.0.6",
     "@types/node": "~8.9.4",
+    "all-contributors-cli": "^6.8.1",
     "codelyzer": "^5.0.1",
+    "git-cz": "^3.2.1",
+    "husky": "^3.0.1",
     "jasmine-core": "^3.3.0",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~1.7.1",
@@ -40,12 +47,34 @@
     "karma-coverage-istanbul-reporter": "~2.0.0",
     "karma-jasmine": "^2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
+    "lint-staged": "^9.2.3",
     "ng-packagr": "^4.7.1",
+    "prettier": "1.18.2",
     "protractor": "^5.4.2",
+    "standard-version": "^6.0.1",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.34.0",
     "tslib": "^1.9.0",
     "tslint": "~5.11.0",
     "typescript": "~3.4.5"
-  }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "npm run hooks:pre-commit && lint-staged",
+      "pre-push": "npm run test:headless"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,less,md,ts,html,component.html}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "browserslist": []
 }
