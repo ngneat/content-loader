@@ -53,12 +53,13 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     this.animationValues = this.rtl ? this.rtlAnimation : this.defautlAnimation;
-    this.setFillStyle();
-    this.setClipStyle();
 
     if (this.baseUrl === '' && isPlatformBrowser(this.platformId)) {
       this.baseUrl = window.location.pathname;
     }
+
+    this.setFillStyle();
+    this.setClipStyle();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
