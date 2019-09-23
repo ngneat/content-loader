@@ -38,8 +38,10 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
 
   @Input() style;
 
+  @Input() ignoreBaseUrl = false;
+
   idClip = uid();
-  idGradient = uid(); 
+  idGradient = uid();
 
   defautlAnimation = ['-3; 1', '-2; 2', '-1; 3'];
   rtlAnimation = ['1; -3', '2; -2', '3; -1'];
@@ -48,13 +50,12 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
   fillStyle: { fill: string };
   clipStyle: string;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: string) {
-  }
+  constructor(@Inject(PLATFORM_ID) private platformId: string) {}
 
   ngOnInit() {
     this.animationValues = this.rtl ? this.rtlAnimation : this.defautlAnimation;
 
-    if (this.baseUrl === '' && isPlatformBrowser(this.platformId)) {
+    if (this.baseUrl === '' && !this.ignoreBaseUrl && isPlatformBrowser(this.platformId)) {
       this.baseUrl = window.location.pathname;
     }
 
@@ -63,13 +64,12 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if(changes['baseUrl']) {
+    if (changes['baseUrl']) {
       if (changes['baseUrl'].previousValue !== changes['baseUrl'].currentValue) {
         this.setFillStyle();
         this.setClipStyle();
       }
     }
-
   }
 
   setFillStyle() {
