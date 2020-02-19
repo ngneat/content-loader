@@ -7,6 +7,8 @@ function uid() {
     .substring(2);
 }
 
+const isIE = navigator.userAgent.indexOf('MSIE') !== -1 || navigator.appVersion.indexOf('Trident/') > -1;
+
 @Component({
   selector: 'content-loader',
   templateUrl: './content-loader.component.html'
@@ -54,6 +56,7 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     this.animationValues = this.rtl ? this.rtlAnimation : this.defautlAnimation;
+    this.animate = isIE ? false : this.animate;
 
     if (this.baseUrl === '' && !this.ignoreBaseUrl && isPlatformBrowser(this.platformId)) {
       this.baseUrl = window.location.pathname;
