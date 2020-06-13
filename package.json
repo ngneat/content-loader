@@ -1,6 +1,7 @@
 {
   "name": "content-loader",
   "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
