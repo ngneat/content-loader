@@ -22,7 +22,7 @@ import { ListContentLoaderComponent } from './list-loader.component';
   ]
 })
 export class ContentLoaderModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<ContentLoaderModule> {
     return {
       ngModule: ContentLoaderModule
     };
