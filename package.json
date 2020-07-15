@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build:lib": "ng build @ngneat/content-loader",
+    "build:lib": "ng build @ngneat/content-loader --prod",
     "hooks:pre-commit": "node hooks/pre-commit.js",
     "release": "cd projects/ngneat/content-loader && standard-version --infile ../../../CHANGELOG.md",
     "commit": "git-cz",
