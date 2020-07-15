@@ -91,7 +91,9 @@
       "avatar_url": "https://avatars2.githubusercontent.com/u/15234844?v=4",
       "profile": "https://github.com/danielsogl",
       "contributions": [
-        "code"
+        "code",
+        "maintenance",
+        "platform"
       ]
     },
     {
