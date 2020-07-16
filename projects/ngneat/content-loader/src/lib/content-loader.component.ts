@@ -54,7 +54,6 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
 
   ngOnInit() {
     this.animationValues = this.rtl ? this.rtlAnimation : this.defautlAnimation;
-
     if (this.baseUrl === '' && !this.ignoreBaseUrl && isPlatformBrowser(this.platformId)) {
       this.baseUrl = window.location.pathname;
     }
@@ -74,11 +73,11 @@ export class ContentLoaderComponent implements OnInit, OnChanges {
 
   setFillStyle() {
     this.fillStyle = {
-      fill: `url(${this.baseUrl}#${this.idGradient})`
+      fill: `url(#${this.idGradient})`
     };
   }
 
   setClipStyle() {
-    this.clipStyle = `url(${this.baseUrl}#${this.idClip})`;
+    this.clipStyle = `url(#${this.idClip})`;
   }
 }
