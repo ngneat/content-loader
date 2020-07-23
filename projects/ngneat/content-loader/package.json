@@ -1,6 +1,6 @@
 {
   "name": "@ngneat/content-loader",
-  "version": "4.1.0",
+  "version": "5.0.0",
   "license": "MIT",
   "description": "SVG component to create placeholder loading, like Facebook cards loading",
   "repository": {
