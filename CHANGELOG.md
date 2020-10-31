@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.0.0](https://github.com/ngneat/content-loader/compare/v5.0.0...v6.0.0) (2020-10-31)
+
+### ⚠ BREAKING CHANGES
+
+- 🧨 align the library with react and remove base url functionality
+
+### Features
+
+- 🎸 lib ([fb57f9a](https://github.com/ngneat/content-loader/commit/fb57f9a75aec60d4dae7f2ef1b229650949b1305))
+
 ## [5.0.0](https://github.com/ngneat/content-loader/compare/v4.1.0...v5.0.0) (2020-07-23)
 
 ### ⚠ BREAKING CHANGES
