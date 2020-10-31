@@ -1,84 +1,71 @@
-import { Component, Inject, Input, OnChanges, OnInit, PLATFORM_ID, SimpleChanges } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 function uid() {
-  return Math.random()
-    .toString(36)
-    .substring(2);
+  return Math.random().toString(36).substring(2);
 }
 
 @Component({
   selector: 'content-loader',
-  templateUrl: './content-loader.component.html'
+  templateUrl: './content-loader.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  styles: [
+    `
+      :host {
+        display: block;
+      }
+    `
+  ]
 })
-export class ContentLoaderComponent implements OnInit, OnChanges {
+export class ContentLoaderComponent {
+  private fixedId = uid();
+
+  idClip = `${this.fixedId}-diff`;
+  idGradient = `${this.fixedId}-animated-diff`;
+  idAria = `${this.fixedId}-aria`;
+
   @Input() animate = true;
 
   @Input() baseUrl = '';
 
-  @Input() width = 400;
+  @Input() speed = 1.2;
 
-  @Input() height = 130;
+  @Input() viewBox: string = '0 0 0 0';
 
-  @Input() speed = 2;
+  @Input() gradientRatio = 2;
 
-  @Input() preserveAspectRatio = 'xMidYMid meet';
+  @Input() backgroundColor = '#f5f6f7';
+  @Input() backgroundOpacity = 1;
 
-  @Input() primaryColor = '#f9f9f9';
+  @Input() foregroundColor = '#eee';
+  @Input() foregroundOpacity = 1;
 
-  @Input() secondaryColor = '#ecebeb';
+  @Input() rtl = false;
 
-  @Input() primaryOpacity = 1;
+  @Input() interval = 0.25;
 
-  @Input() secondaryOpacity = 1;
+  @Input() style = {};
 
-  @Input() uniqueKey;
+  animationValues = [];
 
-  @Input() rtl;
+  clipPath: string;
+  fillStyle: object;
+  duration: string;
+  keyTimes: string;
+  rtlStyle: object | null;
 
-  @Input() style;
-
-  @Input() ignoreBaseUrl = false;
-
-  idClip = uid();
-  idGradient = uid();
-
-  defautlAnimation = ['-3; 1', '-2; 2', '-1; 3'];
-  rtlAnimation = ['1; -3', '2; -2', '3; -1'];
-  animationValues;
-
-  fillStyle: { fill: string };
-  clipStyle: string;
-
-  constructor(@Inject(PLATFORM_ID) private platformId: string) {}
+  constructor() {}
 
   ngOnInit() {
-    this.animationValues = this.rtl ? this.rtlAnimation : this.defautlAnimation;
+    this.clipPath = `url(${this.baseUrl}#${this.idClip})`;
+    this.fillStyle = { fill: `url(${this.baseUrl}#${this.idGradient})` };
+    this.style = this.rtl ? { ...this.style, ...{ transform: 'scaleX(-1)' } } : this.style;
 
-    if (this.baseUrl === '' && !this.ignoreBaseUrl && isPlatformBrowser(this.platformId)) {
-      this.baseUrl = window.location.pathname;
-    }
-
-    this.setFillStyle();
-    this.setClipStyle();
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['baseUrl']) {
-      if (changes['baseUrl'].previousValue !== changes['baseUrl'].currentValue) {
-        this.setFillStyle();
-        this.setClipStyle();
-      }
-    }
-  }
-
-  setFillStyle() {
-    this.fillStyle = {
-      fill: `url(${this.baseUrl}#${this.idGradient})`
-    };
-  }
-
-  setClipStyle() {
-    this.clipStyle = `url(${this.baseUrl}#${this.idClip})`;
+    this.duration = `${this.speed}s`;
+    this.keyTimes = `0; ${this.interval}; 1`;
+    this.animationValues = [
+      `${-this.gradientRatio}; ${-this.gradientRatio}; 1`,
+      `${-this.gradientRatio / 2}; ${-this.gradientRatio / 2}; ${1 + this.gradientRatio / 2}`,
+      `0; 0; ${1 + this.gradientRatio}`
+    ];
   }
 }
