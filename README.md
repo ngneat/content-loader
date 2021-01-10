@@ -134,6 +134,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/danielsogl"><img src="https://avatars2.githubusercontent.com/u/15234844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Daniel Sogl</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=danielsogl" title="Code">💻</a> <a href="#maintenance-danielsogl" title="Maintenance">🚧</a> <a href="#platform-danielsogl" title="Packaging/porting to new platform">📦</a></td>
     <td align="center"><a href="http://www.tailored.hu/"><img src="https://avatars1.githubusercontent.com/u/9606801?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Alex Szabó‮</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=kreatemore" title="Code">💻</a></td>
     <td align="center"><a href="http://codepen.io/donroyco/"><img src="https://avatars2.githubusercontent.com/u/1763537?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Roy</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=donroyco" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://robinvdb.me/"><img src="https://avatars2.githubusercontent.com/u/3083785?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Robin Van den Broeck</b></sub></a><br /><a href="https://github.com/NetanelBasal/content-loader/commits?author=RobinVdBroeck" title="Code">💻</a></td>
   </tr>
 </table>
 

@@ -113,6 +113,17 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "RobinVdBroeck",
+      "name": "Robin Van den Broeck",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3083785?v=4",
+      "profile": "https://robinvdb.me/",
+      "contributions": [
+        "code",
+        "maintenance",
+        "platform"
+      ]
     }
   ],
   "contributorsPerLine": 7
