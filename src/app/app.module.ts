@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ContentLoaderModule } from '@ngneat/content-loader';
+
 import { AppComponent } from './app.component';
-import { ContentLoaderModule } from '../../projects/ngneat/content-loader/src/public_api';
 
 @NgModule({
+  imports: [BrowserModule.withServerTransition({ appId: 'content-loader' }), ContentLoaderModule],
   declarations: [AppComponent],
-  imports: [BrowserModule, ContentLoaderModule],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

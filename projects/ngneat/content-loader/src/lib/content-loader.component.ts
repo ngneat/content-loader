@@ -53,8 +53,6 @@ export class ContentLoaderComponent {
   keyTimes: string;
   rtlStyle: object | null;
 
-  constructor() {}
-
   ngOnInit() {
     this.clipPath = `url(${this.baseUrl}#${this.idClip})`;
     this.fillStyle = { fill: `url(${this.baseUrl}#${this.idGradient})` };

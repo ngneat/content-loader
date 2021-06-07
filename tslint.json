@@ -1,1 +1,10 @@
-{}
+{
+  "rules": {
+    "ban": [
+      true,
+      { "name": "fit", "message": "The fit is forbidden" },
+      { "name": "debugger", "message": "The debugger is forbidden" },
+      { "name": "fdescribe", "message": "The fdescribe is forbidden" }
+    ]
+  }
+}

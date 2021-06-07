@@ -8,39 +8,36 @@
 
     <linearGradient [attr.id]="idGradient">
       <stop offset="0%" [attr.stop-color]="backgroundColor" [attr.stop-opacity]="backgroundOpacity">
-        <ng-container *ngIf="animate">
-          <animate
-            [attr.keyTimes]="keyTimes"
-            attributeName="offset"
-            [attr.values]="animationValues[0]"
-            [attr.dur]="duration"
-            repeatCount="indefinite"
-          />
-        </ng-container>
+        <animate
+          *ngIf="animate"
+          [attr.keyTimes]="keyTimes"
+          attributeName="offset"
+          [attr.values]="animationValues[0]"
+          [attr.dur]="duration"
+          repeatCount="indefinite"
+        />
       </stop>
 
       <stop offset="50%" [attr.stop-color]="foregroundColor" [attr.stop-opacity]="foregroundOpacity">
-        <ng-container *ngIf="animate">
-          <animate
-            attributeName="offset"
-            [attr.keyTimes]="keyTimes"
-            [attr.values]="animationValues[1]"
-            [attr.dur]="duration"
-            repeatCount="indefinite"
-          />
-        </ng-container>
+        <animate
+          *ngIf="animate"
+          attributeName="offset"
+          [attr.keyTimes]="keyTimes"
+          [attr.values]="animationValues[1]"
+          [attr.dur]="duration"
+          repeatCount="indefinite"
+        />
       </stop>
 
       <stop offset="100%" [attr.stop-color]="backgroundColor" [attr.stop-opacity]="backgroundOpacity">
-        <ng-container *ngIf="animate">
-          <animate
-            attributeName="offset"
-            [attr.keyTimes]="keyTimes"
-            [attr.values]="animationValues[2]"
-            [attr.dur]="duration"
-            repeatCount="indefinite"
-          />
-        </ng-container>
+        <animate
+          *ngIf="animate"
+          attributeName="offset"
+          [attr.keyTimes]="keyTimes"
+          [attr.values]="animationValues[2]"
+          [attr.dur]="duration"
+          repeatCount="indefinite"
+        />
       </stop>
     </linearGradient>
   </defs>

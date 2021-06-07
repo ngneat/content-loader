@@ -2,7 +2,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
+    "paths": {
+      "@ngneat/content-loader": ["projects/ngneat/content-loader/src/public_api.ts"]
+    },
     "sourceMap": true,
     "declaration": false,
     "module": "esnext",
