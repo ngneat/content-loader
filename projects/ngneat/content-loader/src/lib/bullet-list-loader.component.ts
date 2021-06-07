@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { ContentLoaderComponent } from './content-loader.component';
 
@@ -15,6 +15,7 @@ import { ContentLoaderComponent } from './content-loader.component';
       <svg:circle cx="10" cy="110" r="8" />
       <svg:rect x="25" y="105" rx="5" ry="5" width="220" height="10" />
     </content-loader>
-  `
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BulletListContentLoaderComponent extends ContentLoaderComponent {}

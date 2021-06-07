@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { ContentLoaderComponent } from './content-loader.component';
 
@@ -13,6 +13,7 @@ import { ContentLoaderComponent } from './content-loader.component';
       <svg:rect x="0" y="88" width="178" height="6" rx="3" />
       <svg:circle cx="20" cy="20" r="20" />
     </content-loader>
-  `
+  `,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FacebookContentLoaderComponent extends ContentLoaderComponent {}
