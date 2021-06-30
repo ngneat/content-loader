@@ -29,7 +29,7 @@ export class ContentLoaderComponent {
 
   @Input() speed = 1.2;
 
-  @Input() viewBox: string = '0 0 0 0';
+  @Input() viewBox: string = '0 0 400 130';
 
   @Input() gradientRatio = 2;
 
