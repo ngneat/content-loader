@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/ngneat/content-loader/compare/v6.0.0...v6.1.0) (2021-06-30)
+
+
+### Features
+
+* enable `OnPush` for all components and setup server-side rendering ([#90](https://github.com/ngneat/content-loader/issues/90)) ([c2fea90](https://github.com/ngneat/content-loader/commit/c2fea90913fc415eb6e7d26a419e4235aad435e2))
+
+
+### Bug Fixes
+
+* **lib:** default size for content loader viewbox ([#76](https://github.com/ngneat/content-loader/issues/76)) ([a749240](https://github.com/ngneat/content-loader/commit/a7492409eb47655ede8b38ad07b13084a68ecc5e))
+
 ## [6.0.0](https://github.com/ngneat/content-loader/compare/v5.0.0...v6.0.0) (2020-10-31)
 
 ### ⚠ BREAKING CHANGES
