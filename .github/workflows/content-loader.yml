@@ -32,9 +32,6 @@ jobs:
           HUSKY_SKIP_INSTALL: 'true'
         run: npm ci
 
-      - name: Run lint
-        run: npm run lint
-
       - name: Build library
         run: npm run build:lib
 
