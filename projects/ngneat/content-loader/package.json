@@ -1,6 +1,6 @@
 {
   "name": "@ngneat/content-loader",
-  "version": "6.2.0",
+  "version": "7.0.0",
   "license": "MIT",
   "description": "SVG component to create placeholder loading, like Facebook cards loading",
   "repository": {
@@ -16,6 +16,9 @@
     "loading",
     "facebook loading"
   ],
+  "peerDependencies": {
+    "@angular/core": ">= 13.0.0"
+  },
   "author": {
     "name": "Netanel Basal",
     "url": "https://netbasal.com"
