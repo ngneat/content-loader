@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.2.0](https://github.com/ngneat/content-loader/compare/v6.1.0...v6.2.0) (2021-11-17)
+
+
+### Features
+
+* upgrade to Angular 13 and switch to modern APF ([#99](https://github.com/ngneat/content-loader/issues/99)) ([3cafc3b](https://github.com/ngneat/content-loader/commit/3cafc3bb3d6583bdc9e42a77aac20dbdd1996c12))
+
 ## [6.1.0](https://github.com/ngneat/content-loader/compare/v6.0.0...v6.1.0) (2021-06-30)
 
 
